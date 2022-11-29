@@ -18,6 +18,7 @@ export class EC2Helper extends ServiceHelper<EC2Client> {
   constructor() {
     super();
     this.client = new EC2Client({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

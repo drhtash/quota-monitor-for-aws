@@ -33,6 +33,7 @@ export class DynamoDBHelper extends ServiceHelper<DynamoDBClient> {
   constructor() {
     super();
     this.client = new DynamoDBClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

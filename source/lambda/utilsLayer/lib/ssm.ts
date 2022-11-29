@@ -23,6 +23,7 @@ export class SSMHelper extends ServiceHelper<SSMClient> {
   constructor() {
     super();
     this.client = new SSMClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

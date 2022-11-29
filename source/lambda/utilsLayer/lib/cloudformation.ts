@@ -31,6 +31,7 @@ export class CloudFormationHelper extends ServiceHelper<CloudFormationClient> {
   constructor(name: string) {
     super();
     this.client = new CloudFormationClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

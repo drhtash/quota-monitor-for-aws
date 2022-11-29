@@ -33,6 +33,7 @@ export class ServiceQuotasHelper extends ServiceHelper<ServiceQuotasClient> {
   constructor() {
     super();
     this.client = new ServiceQuotasClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

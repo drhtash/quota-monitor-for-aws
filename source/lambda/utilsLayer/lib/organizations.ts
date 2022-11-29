@@ -21,6 +21,7 @@ export class OrganizationsHelper extends ServiceHelper<OrganizationsClient> {
   constructor() {
     super();
     this.client = new OrganizationsClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

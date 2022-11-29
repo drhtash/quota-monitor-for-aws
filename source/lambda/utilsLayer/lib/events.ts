@@ -32,6 +32,7 @@ export class EventsHelper extends ServiceHelper<CloudWatchEventsClient> {
   constructor() {
     super();
     this.client = new CloudWatchEventsClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();

@@ -23,6 +23,7 @@ export class CloudWatchHelper extends ServiceHelper<CloudWatchClient> {
   constructor() {
     super();
     this.client = new CloudWatchClient({
+      region: process.env.AWS_REGION,
       customUserAgent: process.env.CUSTOM_SDK_USER_AGENT,
     });
     this.moduleName = <string>__filename.split("/").pop();
