@@ -73,8 +73,6 @@
       ]
     },
     "CDKMetadataAvailable": {
-      "Fn::Or": [
-        {
           "Fn::Or": [
             {
               "Fn::Or": [
@@ -271,7 +269,7 @@
                     {
                       "Ref": "AWS::Region"
                     },
-                    "us-gov-east-1"
+                    "us-gov-west-1"
                   ]
                 },
                 {
@@ -285,8 +283,6 @@
               ]
             }
           ]
-        }
-      ]
     }
   },
   "Resources": {
