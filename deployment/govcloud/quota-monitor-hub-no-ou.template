@@ -1737,13 +1737,6 @@
       },
       "UpdateReplacePolicy": "Delete",
       "DeletionPolicy": "Delete"
-    },
-    "CDKMetadata": {
-      "Type": "AWS::CDK::Metadata",
-      "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAA/11SS1PDIBD+Ld4pWl/jte3oxTrGtOO1Q8naoQkQWaiTyfDfZUmbVi98Dz6yu5Bbfv/Ab67ED05kVU8ateX9ygtZs8WXKYQTGjw4Em+ibZXZEV1YUymvrGHp3KaHAxiPvH8mnAekyMjL0AAZhJHVOuVeoSOHYNYokfOZRIaoqb5Lhf4UP4thc6nQj15kjdDbSvB+KTpwn+CQekvH/usCnFaY1Usw0h/tE0/17zYCEdI0M4Kk+TzIGvxcIDD8Tt1/BAh5ooHktbCNkt1oDjIyJdI0pT1eAOE5eMqgSd9c21ZJcgeS13P0Uq7CFqVT7an1Sx1Z1RmhbZXecC22Q9lMYmR5nvSyO3rDEtAGJ4HJgN7qjTtq5IWzB1XRpeedMUgDXPD34NvgIzO2Ar7H68P0kU+f0o+0R6UmLhivNPBywF/Gnlm1ZAIAAA=="
-      },
-      "Condition": "CDKMetadataAvailable"
     }
   },
   "Outputs": {
